@@ -15,5 +15,15 @@
            {"key": "selection_empty", "operator": "equal", "operand": true, "match_all": true},
            {"key": "following_text", "operator": "regex_match", "operand": "^($| )", "match_all": true}
         ]
+    },
+    {"command": "sublime_jedi_docstring", "keys": ["f1"],
+        "context": [
+            {"key": "selector", "operator": "equal", "operand":  "source.python - string - comment"}
+        ]
+    },
+    {"command": "sublime_jedi_signature", "keys": ["shift+f1"],
+        "context": [
+            {"key": "selector", "operator": "equal", "operand":  "source.python - string - comment"}
+        ]
     }
 ]
